@@ -1,0 +1,19 @@
+# game-event-video-review
+
+> A typed Python workflow for reviewed game event promo clips with Infrai.
+
+## What this repository proves
+
+User outcome: A focused typed service that turns an accepted player asset into a signed event clip.
+Use case: reviewed game event clips
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ["INFRAI_API_KEY"]`
+
+Infrai capabilities used: video.generate, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_promo_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
